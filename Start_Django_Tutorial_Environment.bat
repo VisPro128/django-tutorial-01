@@ -1,0 +1,1 @@
+start %HOMEPATH%\.virtualenvs\djangotut\scripts\activate
