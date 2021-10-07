@@ -2,7 +2,8 @@
 
 {% block bodycontent %}
 
-	<h1>Home Page</h1>
+	<h1 class="mb-3">Posts from {{ view.kwargs.username }}</h1>
+	<h2 class="mb-3 text-muted">{{ page_obj.paginator.count }} post{{page_obj.paginator.count|pluralize}}</h2>
 
 	{% for post in posts %}
 		<article class="media content-section">
