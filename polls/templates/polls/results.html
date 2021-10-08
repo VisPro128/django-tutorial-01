@@ -1,3 +1,5 @@
+{% extends "polls/base.html" %}
+{% block body_content %}
 <h1>{{ question.question_text }}</h1>
 
 <ul>
@@ -8,3 +10,4 @@
 
 <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
 <a href="{% url 'polls:index' %}">Return to index</a>
+{% endblock body_content%}
